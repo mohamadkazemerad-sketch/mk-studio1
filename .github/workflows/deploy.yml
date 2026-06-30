@@ -15,14 +15,18 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - uses: actions/checkout@v4
+      - name: Checkout
+        uses: actions/checkout@v4
 
-      - uses: actions/setup-node@v4
+      - name: Setup Node
+        uses: actions/setup-node@v4
         with:
           node-version: 24
 
       - name: Install dependencies
-        run: npm install
+        run: |
+          npm config set registry https://registry.npmjs.org/
+          npm install
         working-directory: ./MK-Studio
 
       - name: Build project
@@ -46,4 +50,5 @@ jobs:
       name: github-pages
 
     steps:
-      - uses: actions/deploy-pages@v4
+      - name: Deploy
+        uses: actions/deploy-pages@v4
