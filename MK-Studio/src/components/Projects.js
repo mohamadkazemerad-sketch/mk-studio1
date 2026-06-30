@@ -31,7 +31,7 @@ return `
 <div class="project-card">
 
 
-<img src="/images/project1.jpg" alt="Luxury Fashion Website">
+<img src="./images/project1.jpg" alt="Luxury Fashion Website">
 
 
 
@@ -67,7 +67,7 @@ Luxury Fashion Website
 <div class="project-card">
 
 
-<img src="/images/project2.jpg" alt="Business Website">
+<img src="./images/project2.jpg" alt="Business Website">
 
 
 
@@ -103,7 +103,7 @@ Business Website
 <div class="project-card">
 
 
-<img src="/images/project3.jpg" alt="Creative Landing Page">
+<img src="./images/project3.jpg" alt="Creative Landing Page">
 
 
 
